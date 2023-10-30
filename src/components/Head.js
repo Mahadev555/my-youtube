@@ -19,7 +19,7 @@ const Head = () => {
           alt="menu"
           src="https://tse4.mm.bing.net/th?id=OIP.9p-z5zqBkdA8t51iaBWo0wHaHa&pid=Api&P=0&h=180"
         />
-        <a href="#">
+        <a href="Google.com">
         <img
           className="h-12 ml-3 pb-2 cursor-pointer"
           alt="YT-Icon"
