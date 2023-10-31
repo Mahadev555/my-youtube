@@ -22,7 +22,7 @@ const [videos,setVideos] = useState([]);
   }
   return (
     <div>
-      <Videocard info={videos[0]}/>
+      <Videocard info ={videos[0]}/>
     </div>
   )
 }
