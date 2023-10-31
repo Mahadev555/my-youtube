@@ -1,11 +1,15 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Youtube_videos_api } from '../utils/constants';
+import Videocard from './Videocard';
  
  
 
  
 
 const VideoContainer = () => {
+const [videos,setVideos] = useState([]);
+
+
    useEffect(() =>{
     getVideos();
    },[]);
@@ -13,11 +17,12 @@ const VideoContainer = () => {
   const getVideos = async () =>{
     const data = await fetch(  Youtube_videos_api)
     const json = await data.json();
-    console.log(json)
+    console.log(json.items);
+    setVideos(json.items)
   }
   return (
     <div>
-      <h1>Videocontainer</h1>
+      <Videocard info={videos[0]}/>
     </div>
   )
 }
