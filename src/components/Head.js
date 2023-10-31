@@ -29,10 +29,10 @@ const Head = () => {
       </div>
       <div className="col-span-10 ">
         <input
-          className="w-1/2  h-8 ml-20 mt-1 rounded-l-full border border-gray-400"
+          placeholder="Search" className=" px-4  w-1/2  h-8 ml-20   rounded-l-full border border-gray-400"
           type="text"
         />
-        <button className=" rounded-r-full border border-gray-400 p-1  h-8 w-20">
+        <button className="  rounded-r-full border border-gray-400 p-1   h-8 w-20">
           Search
         </button>
       </div>

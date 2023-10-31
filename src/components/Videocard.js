@@ -11,10 +11,10 @@ const Videocard = ({info}) => {
     const {channelTitle, title,thumbnails} = snippet;
 
   return (
-    <div className='p-2 m-2 w-72'>
+    <div className='px-4 py-3 w-1/5'>
       <img className='rounded-lg' alt='Thumbnail' src={thumbnails.medium.url}/>
       <ul className='p-2'>
-        <li className='font-bold py-2'>{title}</li>
+        <li className='text-yt-spec-text-primary font-roboto font-sans text-m leading-2.2 font-medium overflow-hidden block max-h-4.4 line-clamp-2 box-border box-orient-vertical truncate'>{title}</li>
         <li>{channelTitle}</li>
         <li>{statistics.viewCount} views </li>
       </ul>
