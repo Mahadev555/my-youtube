@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
  
 
-const btnList = ["All","Live","Cricket","Music","5G","Drama","Gaming","News","Politics","Cooking","Battel grounds Mobile India"]
+const btnList = ["All","Live","Cricket","Music","5G","Drama","Gaming","Game","Politics","Cooking","Battel grounds Mobile India"]
 const ButtonList = () => {
   return (
     <div className="   flex mx-2">
