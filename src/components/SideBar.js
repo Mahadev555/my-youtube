@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 
 const SideBar = () => {
@@ -11,20 +12,20 @@ const SideBar = () => {
         <div className='p-5 pr-10  shadow-lg col-span-1 '>
 
             <ul className='border-b border-gray-300'>
-                <li class="flex items-center py-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 mr-2">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
+                 <li className="flex items-center py-2"><Link className='flex items-center' to={"/"}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6 mr-2">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path>
                     </svg>
                     Home
-                </li>
+                    </Link></li>
 
-                <li class="flex items-center space-x-2 py-2">
-                    <div class="w-5 h-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" class="fill-current text-current">
+                <li className="flex items-center space-x-2 py-2">
+                    <div className="w-5 h-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" className="fill-current text-current">
                             <path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.50 1.20.50L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.20-3.72-1.14-.71-1.34-.20-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.70-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.20 3.72 1.14.71 1.34.20-3.01-1.14 3.72L15.5 9.26v-1.21l1.8.74c.99.41 1.65 1.35 1.70 2.41.05 1.06-.52 2.06-1.46 2.56z"></path>
                         </svg>
                     </div>
-                    <span class="text-current">Shorts</span>
+                    <span className="text-current">Shorts</span>
                 </li>
 
                 <li className="flex  items-center space-x-2 text-current mb-3 py-2">
