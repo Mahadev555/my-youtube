@@ -9,7 +9,7 @@ const SideBar = () => {
 
     if (!isMenuOpen) return null;
     return (
-        <div className='p-5 pr-10  shadow-lg col-span-1 '>
+        <div className='px-6 py-2 pr-10  shadow-lg col-span-1 '>
 
             <ul className='border-b border-gray-300'>
                  <li className="flex items-center py-2"><Link className='flex items-center' to={"/"}>
