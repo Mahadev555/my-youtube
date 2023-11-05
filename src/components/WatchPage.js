@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { closeMenu } from '../utils/appSlice';  
-import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom'; 
 
 const WatchPage = () => {
 // to get video id from the link present in browser after clicking on thumbnail
@@ -11,15 +11,15 @@ const videoId = searchParams.get('v');
 
 console.log(videoId); 
 
-// to hide or dispatch sidebar after clicking on any video
-  const dispatch = useDispatch();
+// to hide or dispatch sidebar after clicking on any video w-full col-span-12
+  const dispatch = useDispatch(); 
 
   useEffect(() => {
     dispatch(closeMenu())
   })
 
   return (
-    <div className='w-full col-span-12'>
+    <div className='w-full col-span-12' >
       <iframe 
       className='rounded-xl mx-4 my-4'
       width="900" 
