@@ -21,8 +21,8 @@ console.log(videoId);
   return (
     <div className='w-full col-span-12' >
       <iframe 
-      className='rounded-xl mx-4 my-4'
-      width="900" 
+      className='rounded-xl mx-36 my-4'
+      width="850" 
       height="505" 
       src={"https://www.youtube.com/embed/"+videoId+"?si=Dt2rDpJCSrEgQDBf&autoplay=1" }
       title="YouTube video player" 
